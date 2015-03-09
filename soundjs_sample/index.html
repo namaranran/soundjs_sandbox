@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+    <script src="https://code.createjs.com/createjs-2014.12.12.min.js"></script>
+    <script>
+      var soundID = "Thunder";
+
+      function loadSound () {
+        createjs.Sound.registerSound("assets/Thunder.ogg", soundID);
+      }
+
+      function playSound () {
+        createjs.Sound.play(soundID);
+      }
+    </script>
+  </head>
+  <h1> SoundJS Test </h1>
+  <body onload="loadSound();">
+    <button onclick="playSound();" class="playSound">Play Sound</button>
+  </body>
+</html>
